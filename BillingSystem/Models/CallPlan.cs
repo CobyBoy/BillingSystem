@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace BillingSystem.Models
 {
-    public class CallPlan : ICallPlan
+    public abstract class CallPlan : ICallPlan
     {
-        public Dictionary<RateType, double> GeneralRates;
+        public IDictionary<RateType, double> GeneralRates;
 
         public CallPlan()
         {

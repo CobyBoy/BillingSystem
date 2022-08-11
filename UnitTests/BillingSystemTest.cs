@@ -6,12 +6,13 @@ namespace UnitTests
 {
     public class BillingSystemTest
     {
+
         private CallService _callService;
 
         [SetUp]
         public void Setup()
         {
-            _callService = new CallService();
+          _callService = new CallService();
         }
 
         [Test]

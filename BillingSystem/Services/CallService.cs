@@ -18,6 +18,7 @@ namespace BillingSystem.Services
             {
                 callList.Add(call);
             }
+
         }
 
         public List<Call> GetCallHistory()

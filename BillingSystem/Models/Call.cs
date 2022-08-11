@@ -25,6 +25,7 @@ namespace BillingSystem.Models
             StartTime = startTime;
             EndTime = endTime;
         }
+
         public int GetDuration()
         {
             return (int)(EndTime - StartTime).TotalMinutes;
@@ -41,5 +42,6 @@ namespace BillingSystem.Models
             var cost = GetDuration() * CallTypeService.CalculateCostBasedOnLocation(rateAndRateType.FirstOrDefault().Value, CallType);
             return (decimal)cost;
         }
+
     }
 }

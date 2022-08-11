@@ -16,11 +16,11 @@ namespace BillingSystem
             CallPlan plan = null;
             if (clientType.Equals(ClientType.NEW))
             {
-               return new NewClientPlan();
+                return new NewClientPlan();
             }
             if (clientType.Equals(ClientType.EXISTING))
             {
-               return new ClassicPlan();
+                return new ClassicPlan();
             }
 
             return plan;
